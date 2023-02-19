@@ -1,5 +1,31 @@
 //https://leetcode.com/problems/isomorphic-strings/
+//Optimized solution O(n)
+class Solution {
+public:
+    bool isIsomorphic(string s, string t) {
+        char sMap[128] = {0};
+        char tMap[128] = {0};
 
+        for(size_t i = 0; i < s.size(); i++){
+            char sChar = s[i];
+            char tChar = t[i];
+
+            if (sMap[sChar] && sMap[sChar] != tChar) {
+            return false;
+            }
+        
+            if (tMap[tChar] && tMap[tChar] != sChar) {
+            return false;
+            }
+    
+            sMap[sChar] = tChar;
+            tMap[tChar] = sChar;
+        }
+        return true;
+    }
+};
+
+//O(n^2)
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
