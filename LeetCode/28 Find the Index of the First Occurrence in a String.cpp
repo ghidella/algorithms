@@ -2,8 +2,9 @@
 
 class Solution {
 public:
-    int removeElement(vector<int>& nums, int val) {
-        nums.erase(remove(nums.begin(), nums.end(), val), nums.end());
-        return nums.size();
-    }
+    int strStr(string haystack, string needle) {
+        size_t i = haystack.find(needle);
+        if(haystack.size() == 0 || i == std::string::npos) return -1;
+        return i;
+    }           
 };
