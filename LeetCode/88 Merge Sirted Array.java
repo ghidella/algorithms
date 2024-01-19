@@ -17,7 +17,7 @@ class Solution {
       q--;
     }
 
-    // adds the remaining elements of nums2
+    // adds the remaining elements of nums2 
     while (n >= 0) {
       nums1[q] = nums2[n];
       n--;
