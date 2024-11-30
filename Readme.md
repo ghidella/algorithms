@@ -1,2 +1,2 @@
 # Algorithms Pratice
-In this repository i save my solutions to programming problems. I'm currently studying Java and doing the [Top 150 Interview Exercises from LeetCode](https://leetcode.com/studyplan/top-interview-150/).
+My solutions to programming problems.
