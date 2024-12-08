@@ -6,7 +6,6 @@ class Solution:
         return sorted(s) == sorted(t)
 
         
-
 # Optimized solution O(n + m) time and O(n + m) space complexity
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
