@@ -1,14 +1,45 @@
+# ==========================
 # IntelliJ IDEA
+# ==========================
 .idea/
 *.iml
-
-# Build
+*.ipr
+*.iws
 out/
-build/
 
+# ==========================
+# Maven / Gradle / Build
+# ==========================
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================
 # Logs
+# ==========================
 *.log
 
-# Sistema
+# ==========================
+# Sistema Operacional
+# ==========================
 .DS_Store
 Thumbs.db
+*.swp
+
+# ==========================
+# Outros
+# ==========================
+# Arquivos temporários
+*.tmp
+*.bak
+*.orig
+
+# ==========================
+# Testes / Reports
+# ==========================
+/test-output/
+/reports/
+/coverage/
